@@ -4,54 +4,243 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>My HTML5 Site</title>
-  <meta name="description" content="Boilerplate HTML5 site with responsive design and SEO tags." />
+  <title>ClaycrazE • Japanese-influenced ceramics & bonsai pottery</title>
+  <meta name="description" content="ClaycrazE — Japanese-influenced ceramics by Jim Alexander. Home studio build, Skutt 1027 kiln, Yorktown colonial clay, local art community, and a gallery of current work." />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="My HTML5 Site" />
-  <meta property="og:description" content="Boilerplate HTML5 site with responsive design and SEO tags." />
+  <!-- Canonical -->
+  <!-- TODO: update href to the final production URL when you go live -->
+  <link rel="canonical" href="https://claycraze.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ClaycrazE • Japanese-influenced ceramics" />
+  <meta property="og:description" content="Home studio build, Skutt 1027 kiln, Yorktown colonial clay, and a gallery of current work." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://example.com/" />
-  <meta property="og:image" content="https://example.com/og-image.jpg" />
+  <!-- TODO: set this to your staged or prod URL -->
+  <meta property="og:url" content="https://staged.claycraze.com/" />
+  <!-- TODO: replace with a real 1200x630 image -->
+  <meta property="og:image" content="images/og-image.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="My HTML5 Site" />
-  <meta name="twitter:description" content="Boilerplate HTML5 site with responsive design and SEO tags." />
-  <meta name="twitter:image" content="https://example.com/og-image.jpg" />
+  <meta name="twitter:title" content="ClaycrazE • Japanese-influenced ceramics" />
+  <meta name="twitter:description" content="From colonial clay to kiln: follow the build, materials, community, and gallery." />
+  <meta name="twitter:image" content="images/og-image.jpg" />
 
   <!-- Favicons -->
-  <link rel="icon" href="favicon.ico" sizes="any"> <!-- classic .ico -->
-  <link rel="icon" type="image/svg+xml" href="icon.svg"> <!-- modern -->
-  <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- iOS -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArtGallery",
+    "name": "ClaycrazE",
+    "url": "https://claycraze.com/",
+    "description": "Japanese-influenced ceramics and bonsai pottery by Jim Alexander.",
+    "founder": "James Waller Alexander, Jr.",
+    "image": "https://claycraze.com/images/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chesapeake",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    }
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="brand">My HTML5 Site</a>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="brand" aria-current="page">ClaycrazE</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu" class="menu">
+        <li><a href="#business">Business</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#gallery">Gallery</a></li>
       </ul>
     </nav>
+
+    <section class="hero">
+      <!-- TODO: replace banner image -->
+      <img src="images/757banner.jpg" alt="ClaycrazE banner featuring Japanese-influenced ceramics" />
+      <div class="hero-text">
+        <h1>Japanese-influenced ceramics & bonsai pottery</h1>
+        <p>From Yorktown colonial clay to the Skutt 1027 kiln — a studio in motion.</p>
+        <p><a class="btn" href="#gallery">See the work ↓</a></p>
+      </div>
+    </section>
   </header>
 
-  <main>
-    <section>
-      <h1>Welcome!</h1>
-      <p>This is a modern HTML5 boilerplate, ready to customize.</p>
+  <main id="content">
+    <!-- 1) Business -->
+    <section id="business" class="section">
+      <div class="wrap">
+        <h2>Building the Business</h2>
+        <p>ClaycrazE is formalized as an LLC with the City of Chesapeake business license and an IRS EIN. Here’s the practical side of getting a ceramics studio set up right.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>LLC</h3>
+            <p>Registered with the Virginia SCC on June 11, 2019. Why an LLC? Liability protection and a clean foundation for growth.</p>
+            <!-- TODO: optional link to a PDF of your certificate -->
+          </article>
+          <article class="card">
+            <h3>Tax ID (EIN)</h3>
+            <p>IRS EIN obtained for banking, invoicing, and tax filings. Keeps business and personal cleanly separated.</p>
+          </article>
+          <article class="card">
+            <h3>License</h3>
+            <p>City of Chesapeake retail merchant license in place. Local compliance matters — and supports the arts ecosystem.</p>
+          </article>
+        </div>
+
+        <details>
+          <summary>Quick checklist</summary>
+          <ul>
+            <li>Choose a business name and register LLC</li>
+            <li>Get EIN for taxes and banking</li>
+            <li>Open dedicated business bank account</li>
+            <li>Obtain local business license</li>
+            <li>Simple operating agreement (optional but helpful)</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <!-- 2) Studio -->
+    <section id="studio" class="section alt">
+      <div class="wrap">
+        <h2>The Home Studio</h2>
+        <p>Why home? Focus, flexibility, and a workflow that fits how I build. Public studios are great — stocked, maintained, and fired by studio elves — but the home studio is the right call for this season.</p>
+
+        <div class="media">
+          <!-- TODO: replace with your real video (mp4/webm) + poster -->
+          <video controls preload="metadata" poster="images/studio-poster.jpg" width="960">
+            <source src="videos/home_studio.mp4" type="video/mp4" />
+            <p>Your browser does not support the video tag.</p>
+          </video>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Skutt 1027-3 Kiln</h3>
+            <p>Purchased from Clayworks (Richmond, VA). Reliable, roomy, and perfect for larger bonsai containers and stoneware.</p>
+          </article>
+          <article class="card">
+            <h3>Monitoring & Safety</h3>
+            <p>Thermocouples + logging planned; safe kiln placement and ventilation are part of the build plan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Materials -->
+    <section id="materials" class="section">
+      <div class="wrap">
+        <h2>Colonial Clay (Yorktown)</h2>
+        <p>Yorktown clay is part of the story — historically used by William Rogers, the “Poor Potter.” It’s not perfect straight from the ground, so I document the small amendments that make it sing.</p>
+
+        <div class="split">
+          <div>
+            <h3>From ground to wheel</h3>
+            <p>Processing, wedging, and test tiles through a range of cones to dial in shrinkage, absorption, and color.</p>
+          </div>
+          <div>
+            <h3>Amendments</h3>
+            <ul>
+              <li>Screening & deflocculation tests</li>
+              <li>Grogs/sand for structure</li>
+              <li>Flux tweaks for vitrification</li>
+            </ul>
+          </div>
+        </div>
+
+        <blockquote>
+          <p>“Watch the Yorktown clay discovery and testing — the adventure that fuels the studio.”</p>
+          <p><a href="materials.html">See the process →</a></p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 4) Community -->
+    <section id="community" class="section alt">
+      <div class="wrap">
+        <h2>Local Connections</h2>
+        <p>The work is rooted here — Suffolk Center for Cultural Arts, the Nansemond Tribe’s pottery traditions, and the Virginia Coalition of Visual Artists that keeps me in the current.</p>
+
+        <ul class="pill-list">
+          <li>Suffolk Center for Cultural Arts</li>
+          <li>Nansemond Tribe — pottery heritage</li>
+          <li>Virginia Coalition of Visual Artists</li>
+          <li>Ironwood Bonsai (Newport News)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5) Gallery -->
+    <section id="gallery" class="section">
+      <div class="wrap">
+        <h2>Gallery & Exhibits</h2>
+        <p>Recent work, experiments in colonial clay, and the show calendar.</p>
+
+        <div class="gallery-grid">
+          <!-- TODO: replace these with real images -->
+          <figure>
+            <img src="images/pot1.jpg" alt="Bonsai container, shino glaze" loading="lazy">
+            <figcaption>Bonsai container • shino</figcaption>
+          </figure>
+          <figure>
+            <img src="images/pot2.jpg" alt="Stoneware vase, ash-influenced matte" loading="lazy">
+            <figcaption>Stoneware vase • ash-influenced matte</figcaption>
+          </figure>
+          <figure>
+            <img src="images/pot3.jpg" alt="Yorktown clay test piece" loading="lazy">
+            <figcaption>Yorktown clay test</figcaption>
+          </figure>
+        </div>
+
+        <div class="show-list">
+          <!-- TODO: add real dates/links -->
+          <p><strong>Upcoming:</strong> Virginia Wesleyan University — Class of ’76 50th Reunion Exhibition (April 2026)</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 My Site</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 ClaycrazE • Japanese-influenced ceramics</p>
+      <p>
+        <a href="about.html">About</a> ·
+        <a href="contact.html">Contact</a> ·
+        <a href="#business">Start here</a>
+      </p>
+    </div>
   </footer>
 
   <!-- Optional JS -->
   <script src="js/script.js"></script>
+  <script>
+    // Small, accessible toggle for mobile nav
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
 </body>
 </html>
